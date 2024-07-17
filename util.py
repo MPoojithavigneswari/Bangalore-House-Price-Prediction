@@ -39,9 +39,6 @@ def load_saved_artifacts():
 def get_location_names():
     return __locations
 
-def get_data_columns():
-    return __data_columns
-
 if __name__ == '__main__':
     load_saved_artifacts()
     print(get_location_names())
