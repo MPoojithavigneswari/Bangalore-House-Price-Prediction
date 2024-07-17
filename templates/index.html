@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore House Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='index.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Bangalore House Price Prediction</h1>
+            <form id="price-form">
+                <div class="form-group">
+                    <label for="bhk">Number of BHK:</label>
+                    <input type="number" id="bhk" name="bhk" placeholder="Enter BHK">
+                </div>
+                <div class="form-group">
+                    <label for="bath">Number of Bathrooms:</label>
+                    <input type="number" id="bath" name="bath" placeholder="Enter Bath">
+                </div>
+                <div class="form-group">
+                    <label for="area">Area (in square feet):</label>
+                    <input type="number" id="area" name="area" placeholder="Enter Area">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <select id="location" name="location">
+                        <!-- Options will be loaded dynamically using JavaScript -->
+                    </select>
+                </div>
+                <button type="submit">Estimate Price</button>
+            </form>
+            <div class="result">
+                <h2 id="result"></h2>
+                <p id="error-message" class="error-message"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
