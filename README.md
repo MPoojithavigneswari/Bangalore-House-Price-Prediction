@@ -1,6 +1,6 @@
 # Bangalore House Price Prediction
 
-## Description
+## Introduction
 This repository contains a machine learning project for predicting house prices in Bangalore. It includes data preprocessing, exploratory data analysis, feature engineering, model training, and web application for user interface. The project leverages various regression techniques to provide accurate price predictions based on multiple features such as location, total square feet, number of BHK, and more. The website allows users to input property details and receive an estimated market price.
 
 
